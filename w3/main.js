@@ -13,9 +13,10 @@ let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
 function setUserName() {
-  let myName = prompt('Please enter your name.');
+  //let myName = prompt('Please enter your name.');
+  let myName = "Ume Tsuda";
   if(!myName) {
-    setUserName();
+    myName = prompt('Please enter your name.');
   } else {
     localStorage.setItem('name', myName);
     myHeading.innerHTML = '先週の復習です, ' + myName + 'さん';
